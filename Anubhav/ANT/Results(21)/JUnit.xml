@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Anubhav/tests" tests="1" failures="1" skipped="0" hostname="ibm-anubhavsharma" time="257.765" timestamp="Tue Nov 05 17:08:35 IST 2024">
+	<properties>
+		<property name="excludeCallableTestCases" value="true"/>
+		<property name="testEnvironment" value=""/>
+		<property name="pluginOutputLevel" value="WARNING"/>
+		<property name="projectPath" value=".."/>
+		<property name="salesforceMetadataCache" value="Reuse"/>
+		<property name="resultsPathDisposition" value="Increment"/>
+		<property name="testOutputLevel" value="INFO"/>
+		<property name="webBrowserType" value="Chrome"/>
+		<property name="resultsPath" value="../ANT/Results"/>
+		<property name="webBrowserConfiguration" value="Full Screen"/>
+		<property name="projectCachePath" value="C:\Users\anubhav.sharma\Provar\PPProject\Anubhav\ANT\..\..\.provarCaches"/>
+	</properties>
+	<testcase classname="tests/Account Create.testcase" name="Account Create.testcase" time="257.558">
+		<failure message="Execution failed"><![CDATA[Error opening Salesforce UI Connection.  Connection Name: SalesforceConn, cause: [NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.92)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver$$EnhancerByCGLIB$$dace278c
+Command: [ff3c6cf14d14199e0f18c5a991c50938, findElements {using=xpath, value=//*[contains(@class, 'active') and ( (self::div and contains(@class, 'oneContent')) or (self::section and ((contains(@class, 'oneConsoleTab') and ancestor::div[contains(@class, 'active') and (contains(@class, 'oneWorkspace') or contains(@class, 'navexWorkspace')) and not(contains(@class, 'hasPinnedRegionTemplate') and contains(@class, 'hasActiveSubtab'))]) or (contains(@class, 'tabContent') and ancestor::div[contains(@class, 'wsTabset') and not(contains(@class, 'wsTabBarHidden'))] and ancestor::div[contains(@class, 'active') and (contains(@class, 'oneWorkspace') or contains(@class, 'navexWorkspace')) and contains(@class, 'hasPinnedRegionTemplate') and contains(@class, 'hasActiveSubtab')]))) )]//one-record-home-flexipage2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.70 (4d304ce63c47..., userDataDir: C:\Users\anubhav.sharma\Pro...}, fedcm:accounts: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff3c6cf14d14199e0f18c5a991c50938]]]></failure>
+	</testcase>
+</testsuite>

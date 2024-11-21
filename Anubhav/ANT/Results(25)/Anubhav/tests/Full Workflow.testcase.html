@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<style>
+
+			body {
+				font-family: sans-serif;
+			}
+
+			.TestCaseImplTitle {
+				color: blue;
+				font: 0.85em arial;
+				font-weight: bold;
+			}
+
+			.TestCaseImpl .TestItemTitle {
+				color: blue;
+				border-top: 2px solid blue;
+				border-bottom: 2px solid blue;
+				margin-bottom: 0.5em;
+			}
+
+			.TestCaseImpl .TestItemOutcome {
+				border-top: 2px solid blue;
+				border-bottom: 2px solid blue;
+			}
+
+			.ApiCallImpl .TestItemTitle{
+				color: blue;
+				border-top: 1px solid blue;
+				border-bottom: 1px solid blue;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				margin-top: 0.25em;
+				margin-bottom: 0.25em;
+			}
+
+			.ApiCallImpl .TestItemOutcome {
+				border-top: 1px solid blue;
+				border-bottom: 1px solid blue;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				margin-top: 0.25em;
+			}
+
+			.TestItemOutcome {
+				padding-left: 20px;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				clear: both;
+			}
+			
+			.TestItemOutcome.Successful {
+				color: green;
+				background: url('../../successful_16x16.gif') no-repeat 0 0.15em;
+			}
+
+			.TestItemOutcome.Failed {
+				color: red;
+				background: url('../../failed_16x16.gif') no-repeat 0 0.15em;
+				font-weight: bold;
+			}
+
+			.TestItemOutcome.Skipped {
+				color: orange;
+				background: url('../../skipped_16x16.gif') no-repeat 0 0.15em;
+			}
+
+			.TestOutput {
+				font: 0.9em arial;
+				color: black;
+				margin-top: 0.15em;
+				margin-bottom: 0.15em;
+			}
+
+			.TestOutput.err {
+				font-weight: bold;
+				color: red;
+			}
+
+			.TestOutput.war {
+				font-weight: bold;
+				color: orange;
+			}
+
+			.ApiCallImpl{
+				margin-left: 1em;
+				margin-bottom: 0.4em;
+			}
+
+			.TestCaseCallImpl{
+				margin-left: 1em;
+				margin-bottom: 0.4em;
+			}
+			
+		</style>
+	</head>
+	<body><div id='detail-body'>
+	<div style='float: right;'><img src='../..//provar_logo_400x100.png' height='50'/></div>
+<h2><img src='../..//testcase_16x16.png' style='height: 24; padding-top: 4px;'/> Full Workflow.testcase</h2>
+<div class='TestCaseImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:46 (00:00.000)</span></div>Start of Test Case Full Workflow.testcase</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:46 (00:00.005)</span></div>Start of Test Step Salesforce Connect: SalesforceConn (Test)</div><div class='TestOutput inf'>Connecting to Salesforce as SalesforceConn</div><div class='TestOutput off'>Successfully connected to Salesforce as SalesforceConn</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:48 (00:02.073)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:48 (00:02.074)</span></div>Start of Test Step SetUp Data</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:48 (00:02.086)</span></div>Start of Test Step Set Values: CloseDate</div><div class='TestOutput inf'>Setting value OppName to Demo1R434</div><div class='TestOutput off'>Successfully set OppName to Demo1R434</div><div class='TestOutput inf'>Setting value Stage to Prospecting</div><div class='TestOutput off'>Successfully set Stage to Prospecting</div><div class='TestOutput inf'>Setting value LeadSource to Web</div><div class='TestOutput off'>Successfully set LeadSource to Web</div><div class='TestOutput inf'>Setting value Type to Existing Customer - Upgrade</div><div class='TestOutput off'>Successfully set Type to Existing Customer - Upgrade</div><div class='TestOutput inf'>Setting value CloseDate to 2024-11-22</div><div class='TestOutput off'>Successfully set CloseDate to 2024-11-22</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:48 (00:02.113)</span></div>Test Step successful.</div></div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:48 (00:02.117)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:48 (00:02.117)</span></div>Start of Test Step Retrieve Account </div><div class='TestCaseCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:48 (00:02.117)</span></div>Start of Test Case Call Call Find Valid Account</div><div class='TestCaseImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:48 (00:02.117)</span></div>Start of Test Case Find Valid Account</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:48 (00:02.124)</span></div>Start of Test Step Salesforce Connect: SalesforceConn (Test)</div><div class='TestOutput inf'>Connecting to Salesforce as SalesforceConn</div><div class='TestOutput off'>Successfully connected to Salesforce as SalesforceConn</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.599)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.599)</span></div>Start of Test Step Retrieve Amount</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.599)</span></div>Start of Test Step SOQL Query: select Id from Account where Name like 'DevOps%'=&gt;AccountRows</div><div class='TestOutput inf'>Reading a Salesforce object.  Connection Name: SalesforceConn, Query: select Id from Account where Name like 'DevOps%'</div><div class='TestOutput inf'>The query returned no records.</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.855)</span></div>Test Step successful.</div></div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.856)</span></div>Test Step successful.</div></div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.856)</span></div>Test Case successful.</div></div><div class='TestOutput inf'>Handling managed resource.  Name: SalesforceConn</div><div class='TestOutput off'>Salesforce Connection handled successfully.  Name: SalesforceConn</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.856)</span></div>Test Case Call successful.</div></div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.856)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.856)</span></div>Start of Test Step Create Account</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.871)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.871)</span></div>Start of Test Step Create Opp For Account</div><div class='TestCaseCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.875)</span></div>Start of Test Case Call Call Create Opp</div><div class='TestCaseImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.875)</span></div>Start of Test Case Create Opp</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:50 (00:03.875)</span></div>Start of Test Step Salesforce Connect: SalesforceConn (Test)</div><div class='TestOutput inf'>Connecting to Salesforce as SalesforceConn</div><div class='TestOutput off'>Successfully connected to Salesforce as SalesforceConn</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:51 (00:05.553)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:51 (00:05.553)</span></div>Start of Test Step Create Object: Opportunity=&gt;OpportunityId</div><div class='TestOutput inf'>Creating a new Salesforce object.  Connection Name: SalesforceConn, Name: Opportunity, field count: 5</div><div class='TestOutput inf'>Setting fields:</div><div class='TestOutput inf'>=Field=&gt; Type = Existing Customer - Upgrade</div><div class='TestOutput inf'>=Field=&gt; LeadSource = Web</div><div class='TestOutput inf'>=Field=&gt; StageName = Prospecting</div><div class='TestOutput inf'>=Field=&gt; CloseDate = 2024-11-22</div><div class='TestOutput inf'>=Field=&gt; Name = Demo1R434</div><div class='TestOutput sum'>Opportunity created successfully.  Object Id: &amp;a href='sf:object?connection=SalesforceConn&object=Opportunity&id=006J2000004rXkmIAE'&gt;006J2000004rXkmIAE&amp;/a&gt;, Result Name: OpportunityId</div><div class='TestOutput inf'>Logging Salesforce Object Id for clean up.  Object Name: Opportunity, id: 006J2000004rXkmIAE</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:53 (00:07.191)</span></div>Test Step successful.</div></div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:53 (00:07.191)</span></div>Test Case successful.</div></div><div class='TestOutput inf'>Handling managed resource.  Name: SalesforceConn</div><div class='TestOutput off'>Salesforce Connection handled successfully.  Name: SalesforceConn</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:53 (00:07.194)</span></div>Test Case Call successful.</div></div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:53 (00:07.194)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:53 (00:07.194)</span></div>Start of Test Step Create Contact for Account</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:53 (00:07.202)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:53 (00:07.202)</span></div>Start of Test Step Create Case For Account</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:53 (00:07.214)</span></div>Test Step successful.</div></div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:54:53 (00:07.216)</span></div>Test Case successful.</div></div><div class='TestOutput inf'>Handling managed resource.  Name: SalesforceConn</div><div class='TestOutput off'>Salesforce Connection handled successfully.  Name: SalesforceConn</div>
+	</div></body>
+</html>
