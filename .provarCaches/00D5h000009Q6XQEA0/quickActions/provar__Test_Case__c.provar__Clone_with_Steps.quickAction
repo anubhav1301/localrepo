@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><QuickAction xmlns="http://soap.sforce.com/2006/04/metadata"
+   >
+ <fullName>provar__Test_Case__c.provar__Clone_with_Steps</fullName>
+    <flowDefinition>provar__Clone_Test_Case_with_Test_Steps</flowDefinition>
+ <height>0</height>
+  <isProtected>false</isProtected>
+ <label>Clone with Steps</label>
+   <optionsCreateFeedItem>false</optionsCreateFeedItem>
+         <type>Flow</type>
+ <width>0</width>
+</QuickAction>

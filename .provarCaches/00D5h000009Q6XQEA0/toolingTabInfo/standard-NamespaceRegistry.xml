@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="NamespaceRegistry" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Namespace Registries" Name="standard-NamespaceRegistry" SobjectName="NamespaceRegistry" Url="https://testing250-dev-ed.develop.my.salesforce.com/1NR/o"/>
+</toolingTabInfo>

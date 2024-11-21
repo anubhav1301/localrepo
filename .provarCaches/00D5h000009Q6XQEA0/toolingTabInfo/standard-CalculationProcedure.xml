@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="CalculationProcedure" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Calculation Procedures" Name="standard-CalculationProcedure" SobjectName="CalculationProcedure" Url="https://testing250-dev-ed.develop.my.salesforce.com/0k0/o"/>
+</toolingTabInfo>

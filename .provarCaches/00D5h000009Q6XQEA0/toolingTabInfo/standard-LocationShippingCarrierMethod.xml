@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="LocationShippingCarrierMethod" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Location Shipping Carrier Methods" Name="standard-LocationShippingCarrierMethod" SobjectName="LocationShippingCarrierMethod" Url="https://testing250-dev-ed.develop.my.salesforce.com/2A3/o"/>
+</toolingTabInfo>

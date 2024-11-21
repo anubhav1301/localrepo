@@ -1,0 +1,262 @@
+<apex:page controller="provar.TestCyclePDFController" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" renderAs="pdf" title="Test Cycle">
+<html>
+    <head>
+        <style>
+            @page {
+                size: A4;
+                margin: 15mm;
+                @bottom-center {
+                    content: "Page " counter(page) " of " counter(pages);
+                }
+            }
+            .page-break {
+                display:block;
+                page-break-after:always;
+            }
+            body {
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Title Section -->
+        <div style="text-align: center;">
+            <h2 style="font-size: 10rem; color: #555">Test Project</h2>
+            <h1 style="font-size: 15rem;"><apex:outputText value="{!testProjectName}" /></h1>
+            <h2 style="font-size: 10rem; color: #555; margin-top: 15mm;">Test Cycle</h2>
+            <h1 style="font-size: 10rem;"><apex:outputText value="{!testCycle.Name}" /></h1>
+        </div>
+
+        <!-- Overview Section -->
+        <div class="page-break"/>
+        <h2>Overview</h2>
+        <table style="width: 100%; border-collapse: collapse;" border="1">
+            <tbody>
+                <tr>
+                    <td style="width: 40%; padding: 8px; background-color: #f4f4f4;">Test Plan</td>
+                    <td style="padding: 8px;">
+                        <apex:outputField value="{!testCycle.Test_Plan__r.Name}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Environment</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.Environment__r.Name}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Status</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Status__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Start Date Time</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Start_Date_Time__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">End Date Time</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__End_Date_Time__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Comments</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Comments__c}" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Configuration Section -->
+        <h2>Configuration</h2>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;" border="1">
+            <tbody>
+                <tr>
+                    <td style="width: 40%; padding: 8px; background-color: #f4f4f4;">Testing Tool</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Testing_Tool__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Testing Tool Version</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Testing_Tool_Version__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Operating System</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Operating_System__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Operating System Version</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Operating_System_Version__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Browser</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Web_Browser__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Browser Version</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Browser_Version__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Display Resolution</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Screen_Resolution__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Device Model</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Device_Model__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Test Plan Schedule</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.Test_Plan_Schedule__r.Name}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Test Plan Schedule Job</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.Test_Plan_Schedule_Job__r.Name}" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Summary Section -->
+        <div class="page-break"/>
+        <h2>Summary</h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;" border="1">
+            <tbody>
+                <tr>
+                    <td style="width: 40%; padding: 8px; background-color: #f4f4f4;">Total Test Executions</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Total_Test_Executions__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Total Tests Executed</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Total_Tests_Executed__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Pass Rate</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Pass_Rate__c}" />%</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Progress</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Progress__c}" />%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Space between tables -->
+        <div style="margin-top: 40px;"></div>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;" border="1">
+            <tbody>
+                <tr>
+                    <td style="width: 40%; padding: 8px; background-color: #f4f4f4;">Not Executed</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Total_Test_Executions__c - testCycle.provar__Total_Tests_Executed__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">In Progress</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Total_Tests_Executed__c - testCycle.provar__Total_Passed__c - testCycle.provar__Total_Failed__c - testCycle.provar__Total_Skipped__c}"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Pass</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Total_Passed__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Fail</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Total_Failed__c}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; background-color: #f4f4f4;">Skip</td>
+                    <td style="padding: 8px;">
+                        <apex:outputText value="{!testCycle.provar__Total_Skipped__c}" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Test Executions Section -->
+        <div class="page-break"/>
+        <h2>Test Executions</h2>
+
+        <apex:outputPanel rendered="{!testExecutionsBySuite == null}">
+            <p style="margin-top: 10px;">None</p>
+        </apex:outputPanel>
+
+        <apex:outputPanel rendered="{!testExecutionsBySuite != null}">
+            <apex:repeat value="{!testExecutionsBySuite}" var="suiteEntry">
+                <apex:outputPanel rendered="{! suiteEntry != null }">
+                    <h3>
+                        <apex:outputText value="{!suiteEntry}" />
+                    </h3>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{! suiteEntry = null }">
+                    <h3>
+                        <apex:outputText value="No Test Suite" />
+                    </h3>
+                </apex:outputPanel>
+
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; border: none;">
+                    <thead>
+                        <tr>
+                            <th style="width: 80%; padding: 8px; background-color: #f4f4f4;">Test Case Execution</th>
+                            <th style="width: 20%; padding: 8px; background-color: #f4f4f4;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <apex:repeat value="{!testExecutionsBySuite[suiteEntry]}" var="execution">
+                            <tr>
+                                <td style="padding: 8px; border: none; font-size: 14px;">
+                                    <!-- Combine Name and Test Case Name on the same line -->
+                                    <span style="display: inline-block; margin-right: 10px;">
+                                        <apex:outputText value="{!execution.Name}" />
+                                    </span>
+                                    <span>
+                                        <apex:outputText value="{!execution.Test_Case__r.Name}" />
+                                    </span>
+                                </td>
+                                <td style="padding: 8px; border: none; font-size: 14px;">
+                                    <apex:outputText value="{!execution.Status__c}" />
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+            </apex:repeat>
+        </apex:outputPanel>
+    </body>
+</html>
+</apex:page>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="DeliveryEstimationSetup" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Delivery Estimation Setups" Name="standard-DeliveryEstimationSetup" SobjectName="DeliveryEstimationSetup" Url="https://testing250-dev-ed.develop.my.salesforce.com/2A0/o"/>
+</toolingTabInfo>

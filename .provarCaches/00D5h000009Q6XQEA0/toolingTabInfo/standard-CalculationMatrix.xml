@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="CalculationMatrix" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Decision Matrices" Name="standard-CalculationMatrix" SobjectName="CalculationMatrix" Url="https://testing250-dev-ed.develop.my.salesforce.com/0lI/o"/>
+</toolingTabInfo>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>The actual result of executing a test step. This is primarily used for logging manual test execution</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>provar__ActionObs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Where no test step has been pre-defined the user should provide their own description of the action taken or observation noted. This is especially useful for exploratory or design testing. This field will be overwritten from the corresponding Test Step if provided.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If no pre-defined action was used then describe the action taken or observation noted</inlineHelpText>
+        <label>Action (Short)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provar__Action_Long__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Action (Long)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>provar__Actual_Result__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Detail of the actual result observed or recorded if applicable</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Result of executing this step for comparison to the Expected Result</inlineHelpText>
+        <label>Actual Result</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provar__Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Enter any other relevant information</inlineHelpText>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>provar__End_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <label>End Date Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>provar__Parent_Test_Step_Execution__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Parent Test Step Execution</label>
+        <referenceTo>provar__Test_Step_Execution__c</referenceTo>
+        <relationshipLabel>Children Test Step Executions</relationshipLabel>
+        <relationshipName>Test_Step_Executions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>provar__Result__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Result of execution of the test step</description>
+        <inlineHelpText>Execution result</inlineHelpText>
+        <label>Step Result</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>provar__Test_Result</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>provar__Sequence_No__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The sequence number in which steps were executed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The sequence in which steps were executed is very important</inlineHelpText>
+        <label>Sequence No</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>provar__Start_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Start Date Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>provar__Test_Execution__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The test case execution to which this step relates</description>
+        <inlineHelpText>The parent test case execution for when this step is executed</inlineHelpText>
+        <label>Test Execution</label>
+        <referenceTo>provar__Test_Execution__c</referenceTo>
+        <relationshipLabel>Test Step Executions</relationshipLabel>
+        <relationshipName>Test_Step_Executions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>provar__Test_Step__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Predefined Test Step to which this execution relates, if any. Alternatively the user may provide a free type action or observation</description>
+        <inlineHelpText>Select the planned test step performed for this execution result, note this will override any custom action or observation</inlineHelpText>
+        <label>Test Step</label>
+        <referenceTo>provar__Test_Step__c</referenceTo>
+        <relationshipLabel>Test Step Executions</relationshipLabel>
+        <relationshipName>Test_Step_Executions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>provar__URL__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>The URL where this test step was executed</inlineHelpText>
+        <label>URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>Test Step Execution</label>
+    <nameField>
+        <displayFormat>TSE-{00000000}</displayFormat>
+        <label>Test Step Execution Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Test Step Executions</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>provar__Sequence_No__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>provar__ActionObs__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>provar__Result__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>provar__Actual_Result__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>provar__A_test_step_or_action_must_be_entered</fullName>
+        <active>true</active>
+        <description>Either an existing test step or a custom action or observation must be recorded to save a record</description>
+        <errorConditionFormula>ISBLANK(provar__ActionObs__c) &amp;&amp; ISBLANK( provar__Test_Step__c )</errorConditionFormula>
+        <errorDisplayField>provar__ActionObs__c</errorDisplayField>
+        <errorMessage>Either a predefined Test Step or the field &quot;Action (short)&quot; must be entered to save the record.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

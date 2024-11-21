@@ -1,0 +1,15 @@
+<apex:page title="Record Exploratory Session" lightningStylesheets="true" standardstylesheets="false" showHeader="false">
+    <apex:includeLightning />
+    <div id="lightning" />
+
+    <apex:outputPanel id="page">
+        <script>
+            $Lightning.use("provar:ExploratorySessionRecorderApp", function () {
+                $Lightning.createComponent("provar:exploratorySessionRecorder",
+                    { testCaseId: '{! $CurrentPage.parameters.id }' },
+                    "lightning",
+                    function() {});
+            });
+        </script>
+    </apex:outputPanel>
+</apex:page>

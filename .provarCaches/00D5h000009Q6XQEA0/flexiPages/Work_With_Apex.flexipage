@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata"
+   >
+ <fullName>Work_With_Apex</fullName>
+  <flexiPageRegions>
+    <itemInstances>
+   <componentInstance>
+    <componentName>bindWirewithProperty</componentName>
+        <identifier>c_bindWirewithProperty2</identifier>
+       </componentInstance>
+     </itemInstances>
+    <name>region1</name>
+      <type>Region</type>
+ </flexiPageRegions>
+ <flexiPageRegions>
+    <itemInstances>
+   <componentInstance>
+    <componentName>bindWirewithFunction</componentName>
+        <identifier>c_bindWirewithFunction</identifier>
+       </componentInstance>
+     </itemInstances>
+    <name>region2</name>
+      <type>Region</type>
+ </flexiPageRegions>
+ <flexiPageRegions>
+    <itemInstances>
+   <componentInstance>
+    <componentName>bindImperativeMethod</componentName>
+        <identifier>c_bindImperativeMethod</identifier>
+       </componentInstance>
+     </itemInstances>
+  <itemInstances>
+   <componentInstance>
+    <componentName>bindImperativewithParam</componentName>
+        <identifier>c_bindImperativewithParam</identifier>
+       </componentInstance>
+     </itemInstances>
+    <name>region3</name>
+      <type>Region</type>
+ </flexiPageRegions>
+ <masterLabel>Work With Apex</masterLabel>
+     <template>
+      <name>flexipage:appHomeTemplateThreeColumns</name>
+ </template>
+ <type>AppPage</type>
+</FlexiPage>

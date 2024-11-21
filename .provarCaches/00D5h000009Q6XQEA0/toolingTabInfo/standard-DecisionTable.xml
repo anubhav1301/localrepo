@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="DecisionTable" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Lookup Tables" Name="standard-DecisionTable" SobjectName="DecisionTable" Url="https://testing250-dev-ed.develop.my.salesforce.com/DecisionTable"/>
+</toolingTabInfo>

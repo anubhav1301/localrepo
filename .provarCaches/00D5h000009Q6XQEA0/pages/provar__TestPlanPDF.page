@@ -1,0 +1,220 @@
+<apex:page controller="provar.TestPlanPDFController" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" renderAs="pdf" title="Test Plan">
+<html>
+    <head>
+        <style>
+            @page {
+                size: A4;
+                margin: 15mm;
+                @bottom-center {
+                    content: "Page " counter(page) " of " counter(pages);
+                }
+            }
+            .page-break {
+                display:block;
+                page-break-after:always;
+            }
+            body {
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Title Section -->
+        <div style="text-align: center;">
+            <h2 style="font-size: 10rem; color: #555">Test Project</h2>
+            <h1 style="font-size: 15rem;"><apex:outputField value="{!testPlan.Test_Project__r.Name}"/></h1>
+            <h2 style="font-size: 10rem; color: #555; margin-top: 15mm;">Test Plan</h2>
+            <h1 style="font-size: 10rem;"><apex:outputField value="{!testPlan.Name}"/></h1>
+        </div>
+
+        <div class="page-break"/>
+        <h2>1. System Overview</h2>
+        <apex:outputField value="{!testPlan.provar__System_Overview__c}"/>
+
+        <h2>2. Objectives</h2>
+        <apex:outputField value="{!testPlan.provar__Objectives__c}"/>
+
+        <!-- Features Section -->
+        <div class="page-break"/>
+        <h2>3. Scope</h2>
+        
+        <!-- In Scope Section -->
+        <h3>a. In Scope</h3>
+        <apex:outputField value="{!testPlan.provar__Scope__c}"/>
+        
+        <apex:outputPanel rendered="{!inScopeFeatures.size > 0}">
+            <table style="width: 100%; border-collapse: collapse;" border="1">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Feature</th>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Description</th>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Effort (Days)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!inScopeFeatures}" var="feature">
+                        <tr>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!feature.Name}"/>
+                            </td>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!feature.provar__Description__c}"/>
+                            </td>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!feature.provar__Effort_Days__c}"/>
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+        </apex:outputPanel>
+
+        <!-- Out of Scope Section -->
+        <div class="page-break"/>
+        <h3>b. Out of Scope</h3>
+        <apex:outputField value="{!testPlan.provar__Out_of_Scope__c}"/>
+        
+        <apex:outputPanel rendered="{!outOfScopeFeatures.size > 0}">
+            <table style="width: 100%; border-collapse: collapse;" border="1">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Feature</th>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!outOfScopeFeatures}" var="feature">
+                        <tr>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!feature.Name}"/>
+                            </td>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!feature.provar__Description__c}"/>
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+        </apex:outputPanel>
+
+        <!-- Test Approach Section -->
+        <div class="page-break"/>
+        <h2>4. Test Approach</h2>
+        
+        <h3>a. Testing Methodology:</h3>
+        <apex:outputField value="{!testPlan.provar__Testing_Methodology__c}"/>
+    
+        <h3>b. Testing Types:</h3>
+        <apex:outputField value="{!testPlan.provar__Test_Types__c}"/>
+    
+        <h3>c. Test Tools:</h3>
+        <apex:outputField value="{!testPlan.provar__Test_Tools__c}"/>
+    
+        <h3>d. Assumptions:</h3>
+        <apex:outputField value="{!testPlan.provar__Assumptions__c}"/>
+    
+        <h3>e. Constraints:</h3>
+        <apex:outputField value="{!testPlan.provar__Constraints__c}"/>
+    
+        <h3>f. Test Data Strategy:</h3>
+        <apex:outputField value="{!testPlan.provar__Test_Data__c}"/>
+    
+        <h3>g. Test Coverage Plan:</h3>
+        <apex:outputField value="{!testPlan.provar__Coverage__c}"/>
+        
+
+        <!-- Risks Section -->
+        <div class="page-break"/>
+        <h2>5. Risks</h2>
+        <apex:outputPanel rendered="{!testPlan.Risks__r.size > 0}">
+            <table style="width: 100%; border-collapse: collapse;" border="1">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Risk</th>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Description</th>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Risk Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!testPlan.Risks__r}" var="risk">
+                        <tr>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!risk.Name}"/>
+                            </td>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!risk.provar__Description__c}"/>
+                            </td>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!risk.provar__Risk_Level__c}"/>
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!testPlan.Risks__r.size == 0}">
+            None
+        </apex:outputPanel>
+
+        <!-- Test Approach Section -->
+        <div class="page-break"/>
+        <h2>6. Testing Procedures</h2>
+        
+        <h3>a. Acceptable Pass Rate</h3>
+        <apex:outputField value="{!testPlan.provar__Acc_Pass_Rate__c}"/>
+    
+        <h3>b. Acceptance Criteria</h3>
+        <apex:outputField value="{!testPlan.provar__Acceptance_Criteria__c}"/>
+    
+        <h3>c. Defect Management</h3>
+        <apex:outputField value="{!testPlan.provar__Defect_Management__c}"/>
+    
+        <h3>d. Suspension Criteria</h3>
+        <apex:outputField value="{!testPlan.provar__Suspension_Criteria__c}"/>
+    
+        <h3>e. Resumption Requirements</h3>
+        <apex:outputField value="{!testPlan.provar__Resumption_Requirements__c}"/>
+    
+        <h3>f. Testing Frequency</h3>
+        <apex:outputField value="{!testPlan.provar__Frequency__c}"/>
+
+        <!-- Team Members Section -->
+        <div class="page-break"/>
+        <h2>7. Resources</h2>
+        
+        <h3>a. Team Members</h3>        
+        <apex:outputPanel rendered="{!testPlan.Team_Members__r.size > 0}">
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px;" border="1">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Name</th>
+                        <th style="border: 1px solid #d8dde6; padding: 8px; background-color: #f4f6f9;">Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!testPlan.Team_Members__r}" var="teamMember">
+                        <tr>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!teamMember.Person__r.Name}"/>
+                            </td>
+                            <td style="border: 1px solid #d8dde6; padding: 8px;">
+                                <apex:outputField value="{!teamMember.provar__Role__c}"/>
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!testPlan.Team_Members__r.size == 0}">
+            None
+        </apex:outputPanel>
+
+        <h3>b. Team Reviews</h3>
+        <apex:outputField value="{!testPlan.provar__Team_Reviews__c}"/>
+        
+        <h3>c. Training</h3>
+        <apex:outputField value="{!testPlan.provar__Training__c}"/>
+        
+    </body>
+</html>
+</apex:page>

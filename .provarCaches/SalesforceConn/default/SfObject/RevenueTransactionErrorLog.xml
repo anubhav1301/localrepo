@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" keyPrefix="0nY" label="Revenue Transaction Error Log" labelPlural="Revenue Transaction Error Logs" layoutable="true" n="RevenueTransactionErrorLog" queryable="true" readPermission="false" retrieveable="true" s="" t="Revenue Transaction Error Log (0nY)">
+  <standardActions>
+    <sfActionLink modes="ObjectHome PrimaryRevenueTransactionErrorLogs RelatedRevenueTransactionErrorLogs" n="New"/>
+    <sfActionLink modes="View PrimaryRevenueTransactionErrorLogs RelatedRevenueTransactionErrorLogs" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View PrimaryRevenueTransactionErrorLogs RelatedRevenueTransactionErrorLogs" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View PrimaryRevenueTransactionErrorLogs RelatedRevenueTransactionErrorLogs" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View PrimaryRevenueTransactionErrorLogs RelatedRevenueTransactionErrorLogs" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

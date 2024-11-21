@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ActiveScratchOrg" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Active Scratch Orgs" Name="standard-ActiveScratchOrg" SobjectName="ActiveScratchOrg" Url="https://testing250-dev-ed.develop.my.salesforce.com/2AS/o"/>
+</toolingTabInfo>

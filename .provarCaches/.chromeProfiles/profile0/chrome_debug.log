@@ -1,0 +1,17 @@
+[7496:15664:1121/135917.693:WARNING:chrome_main_delegate.cc(744)] This is Chrome version 130.0.6723.117 (not a warning)
+[7496:15664:1121/135917.723:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
+[7496:15664:1121/135917.723:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
+[7496:15664:1121/135917.767:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[7496:15664:1121/135917.772:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
+[13100:4692:1121/135918.031:INFO:cpu_info.cc(53)] Available number of cores: 8
+[12216:25928:1121/135918.055:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[28168:25724:1121/135918.121:INFO:cpu_info.cc(53)] Available number of cores: 8
+[16652:12380:1121/135918.504:INFO:cpu_info.cc(53)] Available number of cores: 8
+[11400:4332:1121/135919.138:INFO:cpu_info.cc(53)] Available number of cores: 8
+[7496:15664:1121/135919.236:INFO:CONSOLE(66)] "[Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'nonce-WYK1lvDL76AlDSR8hE8Z8Q' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:". Note that 'unsafe-inline' is ignored if either a hash or nonce value is present in the source list.
+", source: https://www.google.com/ (66)
+[26280:18480:1121/135919.384:INFO:cpu_info.cc(53)] Available number of cores: 8
+[7496:15664:1121/135919.394:INFO:CONSOLE(53)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://www.google.com/logos/2024/moon/novr2/moon.js (53)
+[7496:15664:1121/135919.395:INFO:CONSOLE(54)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://www.google.com/logos/2024/moon/novr2/moon.js (54)
+[20180:18168:1121/135921.412:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
+[20180:18168:1121/135921.412:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.

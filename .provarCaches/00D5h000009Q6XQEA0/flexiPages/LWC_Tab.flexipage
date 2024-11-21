@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata"
+   >
+ <fullName>LWC_Tab</fullName>
+  <flexiPageRegions>
+    <itemInstances>
+   <componentInstance>
+    <componentName>lwcSldsGrid</componentName>
+        <identifier>c_lwcSldsGrid</identifier>
+       </componentInstance>
+     </itemInstances>
+  <itemInstances>
+   <componentInstance>
+    <componentName>lwcLayout</componentName>
+        <identifier>c_lwcLayout</identifier>
+       </componentInstance>
+     </itemInstances>
+    <name>main</name>
+      <type>Region</type>
+ </flexiPageRegions>
+ <masterLabel>LWC Tab</masterLabel>
+     <template>
+      <name>flexipage:defaultAppHomeTemplate</name>
+ </template>
+ <type>AppPage</type>
+</FlexiPage>

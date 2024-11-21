@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="a03" label="Pokemon" labelPlural="Pokemons" layoutable="true" n="Pokemon__c" queryable="true" readPermission="false" retrieveable="true" s="" t="Pokemon (a03)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome Pokemons__r" n="New"/>
+    <sfActionLink modes="View Pokemons__r" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View Pokemons__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View Pokemons__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View Pokemons__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

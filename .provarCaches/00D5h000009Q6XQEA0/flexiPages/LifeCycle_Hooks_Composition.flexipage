@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata"
+   >
+ <fullName>LifeCycle_Hooks_Composition</fullName>
+  <flexiPageRegions>
+    <itemInstances>
+   <componentInstance>
+    <componentName>lifeCycleHooks</componentName>
+        <identifier>c_lifeCycleHooks</identifier>
+       </componentInstance>
+     </itemInstances>
+    <name>region1</name>
+      <type>Region</type>
+ </flexiPageRegions>
+ <flexiPageRegions>
+    <itemInstances>
+   <componentInstance>
+    <componentName>grandParent</componentName>
+        <identifier>c_grandParent</identifier>
+       </componentInstance>
+     </itemInstances>
+    <name>region2</name>
+      <type>Region</type>
+ </flexiPageRegions>
+ <flexiPageRegions>
+      <name>region3</name>
+      <type>Region</type>
+ </flexiPageRegions>
+ <masterLabel>LifeCycle Hooks &amp; Composition</masterLabel>
+     <template>
+      <name>flexipage:appHomeTemplateThreeColumns</name>
+ </template>
+ <type>AppPage</type>
+</FlexiPage>

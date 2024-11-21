@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingAppInfo>
+  <appDefinition DeveloperName="Quality_Center" IsNavPersonalizationDisabled="true" Label="Quality Center (Beta)" NamespacePrefix="QCLiveChecks" NavType="Standard" UiType="Lightning">
+    <Metadata>&lt;CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata"   &gt;  &lt;brand&gt;    &lt;headerColor&gt;#17B098&lt;/headerColor&gt;  &lt;logo&gt;QCLiveChecks__Q_logo_224_x_164_1_1&lt;/logo&gt;  &lt;logoVersion&gt;1&lt;/logoVersion&gt;  &lt;shouldOverrideOrgTheme&gt;true&lt;/shouldOverrideOrgTheme&gt; &lt;/brand&gt;   &lt;description&gt;Quality Clouds App for developers&lt;/description&gt; &lt;formFactors&gt;Large&lt;/formFactors&gt; &lt;isNavAutoTempTabsDisabled&gt;false&lt;/isNavAutoTempTabsDisabled&gt; &lt;isNavPersonalizationDisabled&gt;true&lt;/isNavPersonalizationDisabled&gt; &lt;isNavTabPersistenceDisabled&gt;false&lt;/isNavTabPersistenceDisabled&gt; &lt;isOmniPinnedViewEnabled&gt;false&lt;/isOmniPinnedViewEnabled&gt; &lt;isServiceCloudConsole&gt;false&lt;/isServiceCloudConsole&gt; &lt;label&gt;Quality Center (Beta)&lt;/label&gt;  &lt;navType&gt;Standard&lt;/navType&gt;   &lt;tabs&gt;QCLiveChecks__QcLivechecksTab&lt;/tabs&gt; &lt;uiType&gt;Lightning&lt;/uiType&gt;  &lt;/CustomApplication&gt;</Metadata>
+  </appDefinition>
+</toolingAppInfo>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="FlowOrchestration" IsAvailableInLightning="true" Label="Orchestrations" Name="standard-FlowOrchestration" SobjectName="FlowOrchestration" Url="https://testing250-dev-ed.develop.my.salesforce.com/1Fe/o"/>
+</toolingTabInfo>

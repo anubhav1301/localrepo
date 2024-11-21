@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><QuickAction xmlns="http://soap.sforce.com/2006/04/metadata"
+   >
+ <fullName>Account.Launch_VF</fullName>
+     <height>250</height>
+  <isProtected>false</isProtected>
+ <label>Launch VF</label>
+   <optionsCreateFeedItem>false</optionsCreateFeedItem>
+ <page>VfDemo1</page>
+        <type>VisualforcePage</type>
+ <width>-100</width>
+</QuickAction>
